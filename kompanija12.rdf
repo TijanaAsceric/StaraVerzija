@@ -1,0 +1,883 @@
+@prefix schema: <http://schema.org/> .
+@prefix organizations: <http://localhost:8080/ProjekatISTijana/webresources/MyPath/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://thewebsemantic.com/javaclass>
+        a       <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+
+schema:Organization  a  <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://thewebsemantic.com/javaclass>
+                "domen.Organization" .
+
+organizations:1f3f6ab7-b562-4c0b-9519-d7f9234701ff
+        a                    schema:Organization ;
+        schema:description   "Société privée à responsabilité limitée"^^xsd:string ;
+        schema:foundingDate  "2012-04-12T22:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "\" A VOTRE GOUT \""^^xsd:string .
+
+organizations:7dc6db1a-fe36-48af-8ae0-363c6cc08320
+        a                    schema:Organization ;
+        schema:description   "Société civile sous forme de société privée à responsabilité limitée"^^xsd:string ;
+        schema:foundingDate  "2010-12-20T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "\" ARCHITECTURE & BOIS, association d'architectes \""^^xsd:string .
+
+organizations:f2f4cbf2-cfff-4c71-9362-f64513363d91
+        a                    schema:Organization ;
+        schema:description   "Private Limited Company"^^xsd:string ;
+        schema:employee      organizations:9504dd0e-b5aa-472f-8684-de951e9e2cfb ;
+        schema:foundingDate  "2010-09-20T22:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "!BIG IMPACT GRAPHICS LIMITED"^^xsd:string .
+
+schema:Person  a  <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://thewebsemantic.com/javaclass>
+                "domen.Person" .
+
+organizations:9504dd0e-b5aa-472f-8684-de951e9e2cfb
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "PHILLIP JEROME MASCARENHAS"^^xsd:string .
+
+organizations:1f22c01b-dc9a-4fd5-9584-1411627c3cec
+        a                    schema:Organization ;
+        schema:description   "Private Limited Company"^^xsd:string ;
+        schema:foundingDate  "2014-03-12T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "!K7 TOURING LIMITED"^^xsd:string .
+
+organizations:dd74056a-81de-4aac-b6f6-61f7375180e6
+        a                    schema:Organization ;
+        schema:description   "Public Limited Company"^^xsd:string ;
+        schema:employee      organizations:76453404-4fa1-4e01-96c5-e60cadea99b4 , organizations:d2870079-51af-470c-9a83-86dc7ea8320a , organizations:93ecb52d-9df3-4cb4-9ff7-a18d6b71a033 , organizations:afaae012-7d56-40f4-ac9a-66c83472c07a , organizations:5451d28d-3197-4c66-bc41-bf4a7905d534 , organizations:b21d12d5-7e93-4ec2-83a4-83f7e1784ee1 , organizations:9b6c7f0c-302c-4d1a-b44a-620a02c505a2 , organizations:b3e3448c-7b78-40e4-bfb8-7de4c785c8af , organizations:381ec563-dae0-4c36-bb02-1c0abcd2f340 , organizations:f427d558-fd28-4433-ac48-f423e52dabc2 , organizations:ba5f0ec5-4a71-463f-b553-fe0befed7dda , organizations:f86ffd20-4968-4ee0-95d5-35ed94afc2f2 , organizations:72d40925-ebab-4a8c-a57f-90d66d9742c0 , organizations:3c617f47-fe85-49bf-bddf-5216fd5d8abf , organizations:2ebc51fb-e5da-4441-b9f7-eeb394af8594 , organizations:aa7050d0-8b36-4b09-8660-70c693a7cc80 , organizations:6af53550-e2c2-4ca4-83d1-507df7a52818 , organizations:7c13ce80-112b-403f-8227-1f9a4bff6807 , organizations:9d6a7be6-382c-4ec9-a939-e98b40a9232a , organizations:be37f41e-0841-4b95-b394-9188236e27b4 , organizations:b5373a9b-78ef-4cf4-b303-0cebfcb1ae2a , organizations:03aed394-4867-4e55-9d41-5f51f3bb39f3 , organizations:07187852-62ea-49d4-81da-95c423d574d1 , organizations:64eaedf2-f0ad-4121-b6cd-33021816f54c , organizations:be82b652-5ce5-4b10-8484-602bce66cd1d , organizations:fd64e5cb-ca6d-46d6-be57-0ecddcc95bba , organizations:c2f6ec3b-3ed1-49e4-a920-457fe88645c1 , organizations:20bdc2bf-d2cb-476e-bd0a-dd35deb76ad6 , organizations:5dae2008-9206-4be7-8915-e288f31ea300 , organizations:efcd8bc8-5d80-492d-9346-6bde832c8095 , organizations:57275f04-64b9-4856-af9d-3adbcad63a17 , organizations:1a291e9d-a2e3-429d-a7c1-bc125c3e241c , organizations:5eb99571-a30e-42f6-822e-ce6172fb1894 , organizations:ac9c0e42-d64d-4e67-ad7c-a1d5c70ec6f4 , organizations:2547f688-113b-4886-940e-2a3440df2050 ;
+        schema:foundingDate  "1909-04-13T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "BP P.L.C."^^xsd:string ;
+        schema:location      organizations:df66d4fe-7912-4d71-83b1-0d90c573a4a3 , organizations:69b5c85c-a6d9-4b7b-b63c-69933e7c16c7 , organizations:0953b205-b675-485b-bb9d-696a4c65dc65 , organizations:482a1ddf-df6c-40aa-8a4d-3423fa81b6f7 , organizations:5bc8390e-107e-4116-adeb-2c4d25021ca5 , organizations:709bc416-d7e7-4f4c-922f-3ea4c8a1f2ee , organizations:9a779e3c-c20a-40b1-be28-12fcaf955e62 , organizations:ca31355a-7a73-4512-9728-2993062dd0a5 , organizations:a05e77a2-681a-4359-b789-65efb50a0043 , organizations:53a40428-e788-4e65-8c3b-9e7eb94e8765 .
+
+schema:PostalAddress  a  <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://thewebsemantic.com/javaclass>
+                "domen.PostalAddress" .
+
+organizations:df66d4fe-7912-4d71-83b1-0d90c573a4a3
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, LONDON SW1Y 4PD, GB"^^xsd:string .
+
+organizations:69b5c85c-a6d9-4b7b-b63c-69933e7c16c7
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, LONDON SW1Y 4PD, GB"^^xsd:string .
+
+organizations:0953b205-b675-485b-bb9d-696a4c65dc65
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, London SW1Y 4PD, GB"^^xsd:string .
+
+organizations:482a1ddf-df6c-40aa-8a4d-3423fa81b6f7
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, London SW1Y 4PD, GB"^^xsd:string .
+
+organizations:5bc8390e-107e-4116-adeb-2c4d25021ca5
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "Britannic House,, 1 Finsbury Circus, LONDON, EC2M 7BA, GB"^^xsd:string .
+
+organizations:709bc416-d7e7-4f4c-922f-3ea4c8a1f2ee
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, LONDON SW1Y 4PD, GB"^^xsd:string .
+
+organizations:9a779e3c-c20a-40b1-be28-12fcaf955e62
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, London SW1Y 4PD, GB"^^xsd:string .
+
+organizations:ca31355a-7a73-4512-9728-2993062dd0a5
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, London SW1Y 4PD, GB"^^xsd:string .
+
+organizations:a05e77a2-681a-4359-b789-65efb50a0043
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, London SW1Y 4PD, GB"^^xsd:string .
+
+organizations:53a40428-e788-4e65-8c3b-9e7eb94e8765
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "gb"^^xsd:string ;
+        schema:streetAddress   "1 St James's Square, London SW1Y 4PD, GB"^^xsd:string .
+
+organizations:76453404-4fa1-4e01-96c5-e60cadea99b4
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "DAVID JOHN JACKSON"^^xsd:string .
+
+organizations:d2870079-51af-470c-9a83-86dc7ea8320a
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "DAVID JOHN PEARL"^^xsd:string .
+
+organizations:93ecb52d-9df3-4cb4-9ff7-a18d6b71a033
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "PAUL MILTON ANDERSON"^^xsd:string .
+
+organizations:afaae012-7d56-40f4-ac9a-66c83472c07a
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "FRANK LEE (\"SKIP\") BOWMAN"^^xsd:string .
+
+organizations:5451d28d-3197-4c66-bc41-bf4a7905d534
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ANTONY BURGMANS"^^xsd:string .
+
+organizations:b21d12d5-7e93-4ec2-83a4-83f7e1784ee1
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "CYNTHIA BLUM CARROLL"^^xsd:string .
+
+organizations:9b6c7f0c-302c-4d1a-b44a-620a02c505a2
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "WILLIAM MARTIN CASTELL"^^xsd:string .
+
+organizations:b3e3448c-7b78-40e4-bfb8-7de4c785c8af
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "IAIN CAMERON CONN"^^xsd:string .
+
+organizations:381ec563-dae0-4c36-bb02-1c0abcd2f340
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "GEORGE ALFRED LAWRENCE DAVID"^^xsd:string .
+
+organizations:f427d558-fd28-4433-ac48-f423e52dabc2
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "IAN EDWARD LAMERT DAVIS"^^xsd:string .
+
+organizations:ba5f0ec5-4a71-463f-b553-fe0befed7dda
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ROBERT WARREN DUDLEY"^^xsd:string .
+
+organizations:f86ffd20-4968-4ee0-95d5-35ed94afc2f2
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "BRENDAN ROBERT NELSON"^^xsd:string .
+
+organizations:72d40925-ebab-4a8c-a57f-90d66d9742c0
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "FREEDOM PHUTHUMA NHLEKO"^^xsd:string .
+
+organizations:3c617f47-fe85-49bf-bddf-5216fd5d8abf
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "CARL-HENRIC SVANBERG"^^xsd:string .
+
+organizations:2ebc51fb-e5da-4441-b9f7-eeb394af8594
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "HANNAH ASHDOWN"^^xsd:string .
+
+organizations:aa7050d0-8b36-4b09-8660-70c693a7cc80
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "JENS BERTELSEN"^^xsd:string .
+
+organizations:6af53550-e2c2-4ca4-83d1-507df7a52818
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ANN PATRICIA DOWLING"^^xsd:string .
+
+organizations:7c13ce80-112b-403f-8227-1f9a4bff6807
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "BRIAN GILVARY"^^xsd:string .
+
+organizations:9d6a7be6-382c-4ec9-a939-e98b40a9232a
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ANDREW BARKLEY SHILSTON"^^xsd:string .
+
+organizations:be37f41e-0841-4b95-b394-9188236e27b4
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "PAULA JEAN CLAYTON"^^xsd:string .
+
+organizations:b5373a9b-78ef-4cf4-b303-0cebfcb1ae2a
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "RICHARD CHARLES GRAYSON"^^xsd:string .
+
+organizations:03aed394-4867-4e55-9d41-5f51f3bb39f3
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "JUDITH CHRISTINE HANRATTY"^^xsd:string .
+
+organizations:07187852-62ea-49d4-81da-95c423d574d1
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "STEPHEN JAMES AHEARNE"^^xsd:string .
+
+organizations:64eaedf2-f0ad-4121-b6cd-33021816f54c
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DAVID CHRISTOPHER ALLEN"^^xsd:string .
+
+organizations:be82b652-5ce5-4b10-8484-602bce66cd1d
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "JOHN FRANCIS HARCOURT ASHBURTON"^^xsd:string .
+
+organizations:fd64e5cb-ca6d-46d6-be57-0ecddcc95bba
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "RUTH BLOCK"^^xsd:string .
+
+organizations:c2f6ec3b-3ed1-49e4-a920-457fe88645c1
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "EDMUND JOHN PHILLIP BROWNE"^^xsd:string .
+
+organizations:20bdc2bf-d2cb-476e-bd0a-dd35deb76ad6
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "JOHN HENRY BRYAN"^^xsd:string .
+
+organizations:5dae2008-9206-4be7-8915-e288f31ea300
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "RODNEY FRANK CHASE"^^xsd:string .
+
+organizations:efcd8bc8-5d80-492d-9346-6bde832c8095
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ERROLL BROWN DAVIS JR"^^xsd:string .
+
+organizations:57275f04-64b9-4856-af9d-3adbcad63a17
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "RICHARD FERRIS"^^xsd:string .
+
+organizations:1a291e9d-a2e3-429d-a7c1-bc125c3e241c
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DOUGLAS JARDINE FLINT"^^xsd:string .
+
+organizations:5eb99571-a30e-42f6-822e-ce6172fb1894
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "WILLIAM DOUGLAS FORD"^^xsd:string .
+
+organizations:ac9c0e42-d64d-4e67-ad7c-a1d5c70ec6f4
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "JOHN GORDON SINCLAIR BUCHANAN"^^xsd:string .
+
+organizations:2547f688-113b-4886-940e-2a3440df2050
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ALAN BOECKMANN"^^xsd:string .
+
+organizations:d2c8dbd5-bf66-4cb3-9df5-00924a493f78
+        a                    schema:Organization ;
+        schema:description   "Private Limited Company"^^xsd:string ;
+        schema:employee      organizations:a00eb4a1-50fb-4d4b-9bcc-7a1f00f063a1 , organizations:20894a58-614d-49a9-9a81-f5ac0d37b213 , organizations:8e0f8edb-5e84-41c0-b9ab-9783848bf5e0 , organizations:03a40204-4d6f-4741-bf80-272f932fe4da , organizations:c176f261-fa84-404e-8fc3-e61b5d287554 , organizations:cbce23de-bf73-4b06-8b2d-f4385fd7c740 ;
+        schema:foundingDate  "2006-03-05T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "DAVLIN PROPERTY MANAGEMENT LTD"^^xsd:string .
+
+organizations:a00eb4a1-50fb-4d4b-9bcc-7a1f00f063a1
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "LINDA MARY POWER"^^xsd:string .
+
+organizations:20894a58-614d-49a9-9a81-f5ac0d37b213
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DAVID POWER"^^xsd:string .
+
+organizations:8e0f8edb-5e84-41c0-b9ab-9783848bf5e0
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "LINDA MARY POWER"^^xsd:string .
+
+organizations:03a40204-4d6f-4741-bf80-272f932fe4da
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "STEPHEN ERIC CRUM"^^xsd:string .
+
+organizations:c176f261-fa84-404e-8fc3-e61b5d287554
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      " COMPANY SECRETARIES (WALES) LTD"^^xsd:string .
+
+organizations:cbce23de-bf73-4b06-8b2d-f4385fd7c740
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      " NEOCLES LIMITED"^^xsd:string .
+
+organizations:07e798f1-dde4-46a5-990f-83ebe9b32279
+        a                    schema:Organization ;
+        schema:description   "Private Unlimited Company"^^xsd:string ;
+        schema:employee      organizations:0d2e5628-ee4e-427b-82af-dbee91b9a545 , organizations:a6c7804b-5755-4c86-b8f0-67de1e19c608 , organizations:4e74c23a-6038-4205-baf2-9de2efdc91b7 , organizations:28e4cacc-3f6b-4851-8561-718342800174 , organizations:18f07ef5-f880-4ce7-90fd-391bcfde412f , organizations:d6b7f654-c80b-46ae-a88d-8ee693019440 , organizations:f8b2b808-fd75-4923-9df4-dcc654919d4d , organizations:48dd43e2-2a70-45f1-9f8c-4e70369ef4d2 , organizations:44df1ee2-0046-4e46-964e-70cd1a31aeb6 , organizations:37b6dc9c-84bd-485e-b085-791b26c8806c , organizations:8573f8a5-54e7-4693-8899-ee2f123493b7 , organizations:387e512a-4c63-4ea2-b681-0612dc514729 , organizations:a3d5943d-0179-4534-893f-b2880375635c , organizations:f7bcb8c4-55e2-416a-bd5a-74e0c0c53e94 , organizations:a549c05e-c880-49ea-b1bf-fa98b519ecba , organizations:36c8698c-8c6f-4e33-b943-b9cb4bf707b4 , organizations:546666ba-ec65-43c4-8e43-131b81d63bb7 , organizations:21ae9981-2a88-4bd7-bcee-283eca7383aa , organizations:8097d3d7-1069-4148-afd1-4c9c331efe67 , organizations:5c85fd18-84e9-4ce0-8e0b-ce17bfe08872 , organizations:0635cab5-c257-4457-bd28-8d6fb7999643 , organizations:7335d530-9345-4846-bc14-645216f5525c , organizations:0afd0349-857c-4b1c-b82f-a0e619bef582 , organizations:d79eb631-55b1-4d7d-be3a-071945826f21 , organizations:a195452d-44ee-4465-a5f0-f815088d4b9d , organizations:ebaa4c8d-7e6f-490f-a421-77350469b0cc , organizations:15bda881-40cb-4686-82bc-2fb853ceeee0 , organizations:876de3b5-042f-48df-afc7-29cdf68208d4 , organizations:121cf064-5e47-4c98-85da-a8f350e5946a ;
+        schema:foundingDate  "1993-11-28T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "COMMERZBANK LEASING DECEMBER (11) UNLIMITED"^^xsd:string .
+
+organizations:0d2e5628-ee4e-427b-82af-dbee91b9a545
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "JAMES CAMERON WALL"^^xsd:string .
+
+organizations:a6c7804b-5755-4c86-b8f0-67de1e19c608
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "NEIL GORDON AIKEN"^^xsd:string .
+
+organizations:4e74c23a-6038-4205-baf2-9de2efdc91b7
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "RICHARD ALASTAIR BIRCH"^^xsd:string .
+
+organizations:28e4cacc-3f6b-4851-8561-718342800174
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "PAUL RICHARD BURROWS"^^xsd:string .
+
+organizations:18f07ef5-f880-4ce7-90fd-391bcfde412f
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ANTHONY DAVID LEVY"^^xsd:string .
+
+organizations:d6b7f654-c80b-46ae-a88d-8ee693019440
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "IRINA MARSOVNA DANIEL"^^xsd:string .
+
+organizations:f8b2b808-fd75-4923-9df4-dcc654919d4d
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "ANDREW JOHN STEVENS"^^xsd:string .
+
+organizations:48dd43e2-2a70-45f1-9f8c-4e70369ef4d2
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "GWENDOLINE MARY BATCHELOR"^^xsd:string .
+
+organizations:44df1ee2-0046-4e46-964e-70cd1a31aeb6
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "MICHAEL CHRISTOPHER BEEBEE"^^xsd:string .
+
+organizations:37b6dc9c-84bd-485e-b085-791b26c8806c
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "JONATHAN PAUL COHEN"^^xsd:string .
+
+organizations:8573f8a5-54e7-4693-8899-ee2f123493b7
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "SHIRLEY ANN ELIZABETH EDWARDS"^^xsd:string .
+
+organizations:387e512a-4c63-4ea2-b681-0612dc514729
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DAVID JAMES ELLIS"^^xsd:string .
+
+organizations:a3d5943d-0179-4534-893f-b2880375635c
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "HENRIETTA FRANCES JANE FANE DE SALIS"^^xsd:string .
+
+organizations:f7bcb8c4-55e2-416a-bd5a-74e0c0c53e94
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ROBIN GARRATT"^^xsd:string .
+
+organizations:a549c05e-c880-49ea-b1bf-fa98b519ecba
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DAVID MARTIN GREEN"^^xsd:string .
+
+organizations:36c8698c-8c6f-4e33-b943-b9cb4bf707b4
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DAVID PAUL HEASMAN"^^xsd:string .
+
+organizations:546666ba-ec65-43c4-8e43-131b81d63bb7
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "SARAH ANNE HUTCHISON"^^xsd:string .
+
+organizations:21ae9981-2a88-4bd7-bcee-283eca7383aa
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "MARK CUNLIFFE JACKSON"^^xsd:string .
+
+organizations:8097d3d7-1069-4148-afd1-4c9c331efe67
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "DAVID GARETH JONES"^^xsd:string .
+
+organizations:5c85fd18-84e9-4ce0-8e0b-ce17bfe08872
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "SUZANNE MARGARET JULIAN"^^xsd:string .
+
+organizations:0635cab5-c257-4457-bd28-8d6fb7999643
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "GRAHAM STEPHEN LONG"^^xsd:string .
+
+organizations:7335d530-9345-4846-bc14-645216f5525c
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "WILLIAM NAIRN LOWE"^^xsd:string .
+
+organizations:0afd0349-857c-4b1c-b82f-a0e619bef582
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "ANNA MERRICK"^^xsd:string .
+
+organizations:d79eb631-55b1-4d7d-be3a-071945826f21
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "JONATHAN CLIVE NICHOLLS"^^xsd:string .
+
+organizations:a195452d-44ee-4465-a5f0-f815088d4b9d
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "JEREMY DAVID NICHOLSON THOMAS"^^xsd:string .
+
+organizations:ebaa4c8d-7e6f-490f-a421-77350469b0cc
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "GWENDOLINE MARY BATCHELOR"^^xsd:string .
+
+organizations:15bda881-40cb-4686-82bc-2fb853ceeee0
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      " ABBEY NATIONAL SECRETARIAT SERVICES LIMITED"^^xsd:string .
+
+organizations:876de3b5-042f-48df-afc7-29cdf68208d4
+        a                schema:Person ;
+        schema:jobTitle  "nominated secretary"^^xsd:string ;
+        schema:name      " SWIFT INCORPORATIONS LIMITED"^^xsd:string .
+
+organizations:121cf064-5e47-4c98-85da-a8f350e5946a
+        a                schema:Person ;
+        schema:jobTitle  "nominated director"^^xsd:string ;
+        schema:name      " INSTANT COMPANIES LIMITED"^^xsd:string .
+
+organizations:f9923117-e079-4d53-847d-3d799d881169
+        a                    schema:Organization ;
+        schema:description   "Nonprofit Corporation"^^xsd:string ;
+        schema:employee      organizations:ce288623-61bd-47d8-99ca-3fd3b83579d6 , organizations:f7122d99-7651-449b-b521-a8dc812d3216 , organizations:63be3ecd-4873-4490-820d-36b0cf627577 , organizations:ad59678f-1cbf-4126-8525-febea1b559b5 , organizations:c7ff5d53-30a9-4e69-b796-eabc4ce9c649 , organizations:27cef2b9-8205-4408-a85a-7bd494977b36 , organizations:66b816f6-d150-41b5-86df-bd0994871d1c , organizations:263f86b3-0de5-47f7-a783-eb162912dfbc , organizations:25d691d0-abed-4588-8af3-68a277342c4f , organizations:49a16247-83db-4c96-bcfb-3ca04c13d08c ;
+        schema:foundingDate  "2014-07-08T22:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "\"AGAPE\" V&N Davidhizar's Foundation"^^xsd:string ;
+        schema:location      organizations:c4ec5e75-ed07-46e6-b903-0f7643700ed2 .
+
+organizations:c4ec5e75-ed07-46e6-b903-0f7643700ed2
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "us_ak"^^xsd:string ;
+        schema:streetAddress   "koodanthodi mathur,palakkad india, palakkad, kerala india, 678571, india"^^xsd:string .
+
+organizations:ce288623-61bd-47d8-99ca-3fd3b83579d6
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Bogdan Shilov"^^xsd:string .
+
+organizations:f7122d99-7651-449b-b521-a8dc812d3216
+        a                schema:Person ;
+        schema:jobTitle  "assistant treasurer"^^xsd:string ;
+        schema:name      "Bogdan Shilov"^^xsd:string .
+
+organizations:63be3ecd-4873-4490-820d-36b0cf627577
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Chester Blair Gordon"^^xsd:string .
+
+organizations:ad59678f-1cbf-4126-8525-febea1b559b5
+        a                schema:Person ;
+        schema:jobTitle  "treasurer"^^xsd:string ;
+        schema:name      "Chester Blair Gordon"^^xsd:string .
+
+organizations:c7ff5d53-30a9-4e69-b796-eabc4ce9c649
+        a                schema:Person ;
+        schema:jobTitle  "president"^^xsd:string ;
+        schema:name      "Lavern Davidhizar"^^xsd:string .
+
+organizations:27cef2b9-8205-4408-a85a-7bd494977b36
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Nika Nurgyza Davidhizar"^^xsd:string .
+
+organizations:66b816f6-d150-41b5-86df-bd0994871d1c
+        a                schema:Person ;
+        schema:jobTitle  "vice president"^^xsd:string ;
+        schema:name      "Nika Nurgyza Davidhizar"^^xsd:string .
+
+organizations:263f86b3-0de5-47f7-a783-eb162912dfbc
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Rochelle Gordon"^^xsd:string .
+
+organizations:25d691d0-abed-4588-8af3-68a277342c4f
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "Rochelle Gordon"^^xsd:string .
+
+organizations:49a16247-83db-4c96-bcfb-3ca04c13d08c
+        a                schema:Person ;
+        schema:jobTitle  "agent"^^xsd:string ;
+        schema:name      "Nurgyza Davidhizar"^^xsd:string .
+
+organizations:3599a467-05d4-4cff-8aac-7abe8cb5a860
+        a                    schema:Organization ;
+        schema:description   "Business Corporation"^^xsd:string ;
+        schema:employee      organizations:1aefce31-dfe9-4c16-b992-2dff1195c9bd , organizations:01ae6ab1-65b4-467e-94c7-efd8d562aaaa , organizations:3d577f16-cd49-4ec9-8680-9ec8d72f6254 , organizations:1f510e9b-b51d-47b3-bd64-19111ee5f245 , organizations:e0b183ac-f3f3-4f99-a1f7-68f1818056f1 , organizations:9a8c325c-3bd2-4de6-9d1e-14b9631fc4b2 , organizations:668832c3-6f03-4680-846f-9a880bf205f6 , organizations:ac2e6d6a-0566-49b3-abb0-36b21a20f001 , organizations:7ec5aecc-53b3-499d-91b2-fd921a34e86c , organizations:f6a98a24-b4c1-47b7-b30b-0cf54396595c , organizations:1a61401f-72c2-4ada-820d-eaeff6015888 ;
+        schema:foundingDate  "2005-02-27T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "\"C\" Company"^^xsd:string .
+
+organizations:1aefce31-dfe9-4c16-b992-2dff1195c9bd
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "Amy Church"^^xsd:string .
+
+organizations:01ae6ab1-65b4-467e-94c7-efd8d562aaaa
+        a                schema:Person ;
+        schema:jobTitle  "treasurer"^^xsd:string ;
+        schema:name      "Amy Church"^^xsd:string .
+
+organizations:3d577f16-cd49-4ec9-8680-9ec8d72f6254
+        a                schema:Person ;
+        schema:jobTitle  "vice president"^^xsd:string ;
+        schema:name      "Heather Church"^^xsd:string .
+
+organizations:1f510e9b-b51d-47b3-bd64-19111ee5f245
+        a                schema:Person ;
+        schema:jobTitle  "vice president"^^xsd:string ;
+        schema:name      "Joshua Church"^^xsd:string .
+
+organizations:e0b183ac-f3f3-4f99-a1f7-68f1818056f1
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Justin Church"^^xsd:string .
+
+organizations:9a8c325c-3bd2-4de6-9d1e-14b9631fc4b2
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Lorrie Church"^^xsd:string .
+
+organizations:668832c3-6f03-4680-846f-9a880bf205f6
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Nels Church"^^xsd:string .
+
+organizations:ac2e6d6a-0566-49b3-abb0-36b21a20f001
+        a                schema:Person ;
+        schema:jobTitle  "president"^^xsd:string ;
+        schema:name      "Nels Church"^^xsd:string .
+
+organizations:7ec5aecc-53b3-499d-91b2-fd921a34e86c
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Seth Church"^^xsd:string .
+
+organizations:f6a98a24-b4c1-47b7-b30b-0cf54396595c
+        a                schema:Person ;
+        schema:jobTitle  "vice president"^^xsd:string ;
+        schema:name      "Seth Church"^^xsd:string .
+
+organizations:1a61401f-72c2-4ada-820d-eaeff6015888
+        a                schema:Person ;
+        schema:jobTitle  "agent"^^xsd:string ;
+        schema:name      "Seth D Church"^^xsd:string .
+
+organizations:4024db90-9dd4-4ed2-b297-629b52668e85
+        a                    schema:Organization ;
+        schema:description   "Non-distributing corporation with 50 or fewer shareholders"^^xsd:string ;
+        schema:employee      organizations:bda245c1-e768-421f-abfd-13ba05248f86 ;
+        schema:foundingDate  "1993-03-01T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "2900319 CANADA INC."^^xsd:string ;
+        schema:location      organizations:a8d9c930-3fc6-4357-b8e1-aa29d509cc66 , organizations:4355a662-1a3a-4c93-b3de-234f6e281d10 .
+
+organizations:a8d9c930-3fc6-4357-b8e1-aa29d509cc66
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "ca"^^xsd:string ;
+        schema:streetAddress   "1836 Kishmirin Tuchus, Lublin, Eckvelt, H4W3A5, Grodno Gibernia"^^xsd:string .
+
+organizations:4355a662-1a3a-4c93-b3de-234f6e281d10
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "ca"^^xsd:string ;
+        schema:streetAddress   "6021 Freud Avenue, Cote St. Luc QC H4W 3A8, CA"^^xsd:string .
+
+organizations:bda245c1-e768-421f-abfd-13ba05248f86
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "HYMAN MARC PERCHER"^^xsd:string .
+
+organizations:d24129b8-2bc9-42c8-b0b8-0014e82a9e8f
+        a                    schema:Organization ;
+        schema:description   "Non-distributing corporation with 50 or fewer shareholders"^^xsd:string ;
+        schema:employee      organizations:d707026c-8867-4817-b3e5-d4965ab5dc5f , organizations:915f51cc-18ff-41f9-8c2d-ecb391be7701 ;
+        schema:foundingDate  "2010-06-27T22:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "CanadaWay Transport inc."^^xsd:string ;
+        schema:location      organizations:566ae32b-72a1-4010-b4fe-979c24d2e42f .
+
+organizations:566ae32b-72a1-4010-b4fe-979c24d2e42f
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "ca"^^xsd:string ;
+        schema:streetAddress   "4655 Andre-Laurendeau St, Boisbriand, Quebec, J7H 1R2, Canada"^^xsd:string .
+
+organizations:d707026c-8867-4817-b3e5-d4965ab5dc5f
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Robert Allen Sarroino"^^xsd:string .
+
+organizations:915f51cc-18ff-41f9-8c2d-ecb391be7701
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Josée Roussy"^^xsd:string .
+
+organizations:85e667fa-6b52-4640-9517-4df496eef24b
+        a                    schema:Organization ;
+        schema:description   "Osakeyhtiö"^^xsd:string ;
+        schema:foundingDate  "2008-08-12T22:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "ALT FINLAND OY"^^xsd:string ;
+        schema:location      organizations:d93ca867-e68c-411a-b46c-84cec6416006 .
+
+organizations:d93ca867-e68c-411a-b46c-84cec6416006
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "fi"^^xsd:string ;
+        schema:streetAddress   "Gummeruksenkatu 7, FI-40100 Jyväskylä, FI"^^xsd:string .
+
+organizations:e63c6839-0f8f-49b0-a871-20beb0442e67
+        a                    schema:Organization ;
+        schema:description   "Company limited by shares"^^xsd:string ;
+        schema:employee      organizations:05d05357-15e5-4187-b725-51d1fb3b66eb , organizations:f7eb2a08-1cf5-446f-9a97-0446f30cd972 , organizations:020436c9-c1da-4b52-866a-fa90a582e87b , organizations:14984da0-9a3a-480a-b8ed-afcd3f1960f6 , organizations:07e174ae-6161-4522-8a1c-6e65e7b15153 , organizations:6f601b8f-d9ed-43eb-90ff-e3a91ec59177 , organizations:c80879ef-1935-43ed-a36a-4137c4085517 ;
+        schema:foundingDate  "2000-04-12T22:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "MAKEMYTRIP (INDIA) PRIVATE LIMITED"^^xsd:string .
+
+organizations:05d05357-15e5-4187-b725-51d1fb3b66eb
+        a                schema:Person ;
+        schema:jobTitle  "whole-time director"^^xsd:string ;
+        schema:name      "Deep Kalra"^^xsd:string .
+
+organizations:f7eb2a08-1cf5-446f-9a97-0446f30cd972
+        a                schema:Person ;
+        schema:jobTitle  "whole-time director"^^xsd:string ;
+        schema:name      "KEYUR JYOTINDRA JOSHI"^^xsd:string .
+
+organizations:020436c9-c1da-4b52-866a-fa90a582e87b
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Frederic Lalonde"^^xsd:string .
+
+organizations:14984da0-9a3a-480a-b8ed-afcd3f1960f6
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Philip Clay Wolf"^^xsd:string .
+
+organizations:07e174ae-6161-4522-8a1c-6e65e7b15153
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "Aditya Guleri"^^xsd:string .
+
+organizations:6f601b8f-d9ed-43eb-90ff-e3a91ec59177
+        a                schema:Person ;
+        schema:jobTitle  "secretary"^^xsd:string ;
+        schema:name      "A Kamal Kishore"^^xsd:string .
+
+organizations:c80879ef-1935-43ed-a36a-4137c4085517
+        a                schema:Person ;
+        schema:jobTitle  "director"^^xsd:string ;
+        schema:name      "RAJESH MAGOW"^^xsd:string .
+
+organizations:8003b585-d8e7-4174-892a-160797f05960
+        a                   schema:Organization ;
+        schema:description  "Florida Limited Liability"^^xsd:string ;
+        schema:employee     organizations:06cf8118-7d90-4651-8b2d-31be2755aa7d , organizations:597bed9f-f937-4651-af3d-3c7aacc37b09 , organizations:2a7a0bcd-10ac-4f71-86a7-6c53f36718b9 ;
+        schema:legalName    "GE FLORIDA INVESTMENT LLC"^^xsd:string .
+
+organizations:06cf8118-7d90-4651-8b2d-31be2755aa7d
+        a            schema:Person ;
+        schema:name  "RAPHAEL AMMAR"^^xsd:string .
+
+organizations:597bed9f-f937-4651-af3d-3c7aacc37b09
+        a                schema:Person ;
+        schema:jobTitle  "agent"^^xsd:string ;
+        schema:name      "RAPHAEL AMMAR"^^xsd:string .
+
+organizations:2a7a0bcd-10ac-4f71-86a7-6c53f36718b9
+        a            schema:Person ;
+        schema:name  " AARON VAKNIN"^^xsd:string .
+
+organizations:abdf177e-b3ee-41c6-a837-1ca475d68701
+        a                 schema:Organization ;
+        schema:legalName  "ADRIATICA.NET d.o.o."^^xsd:string ;
+        schema:location   organizations:bf1460f1-18ca-4823-adda-d2b5ac0df704 .
+
+organizations:bf1460f1-18ca-4823-adda-d2b5ac0df704
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "hr"^^xsd:string ;
+        schema:streetAddress   "Heinzelova 62a,, HR-10000 Zagreb, HR"^^xsd:string .
+
+organizations:1463cc71-a323-47ef-8480-e095574d4ef3
+        a                 schema:Organization ;
+        schema:legalName  "AWT INTERNATIONAL d.o.o."^^xsd:string ;
+        schema:location   organizations:c6df6fe8-b66c-4582-b5bb-6113c5b54a2e .
+
+organizations:c6df6fe8-b66c-4582-b5bb-6113c5b54a2e
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "hr"^^xsd:string ;
+        schema:streetAddress   "Slavonska avenija bb,, Robni terminali Žitnjak, HR-10000 Zagreb, HR"^^xsd:string .
+
+organizations:406c67a4-8ed9-435d-9732-52cf8ce5c661
+        a                    schema:Organization ;
+        schema:description   "Aktieselskab"^^xsd:string ;
+        schema:foundingDate  "1999-02-14T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "A/S SCANNET"^^xsd:string ;
+        schema:location      organizations:af6036b1-f9a9-4459-aa5b-c5991485d383 .
+
+organizations:af6036b1-f9a9-4459-aa5b-c5991485d383
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "dk"^^xsd:string ;
+        schema:streetAddress   "Fjordvej 78, DK-6000 Kolding, DK"^^xsd:string .
+
+organizations:a9e257f1-0d9c-4ebe-bb92-95106c727637
+        a                   schema:Organization ;
+        schema:description  "Established in 2002, Marsia Holzer Studio works with recycled metals, salvaged woods and other natural materials to create uncommon lighting, furniture, sculpture and other decorative objects that are the very essence of organic refinement and craftsmanship excellence. Each and every element in a design is wrought by hand and beautifully finished to be timeless archetypes of form and function.\n\nThe studio was founded by British-born Marsia Holzer, who moved to the U.S. in the 1960s to find a place where, as she told New York Social Diary in 2009, &quot;…if you have the energy to do something, you&#39;re doing it a week later.&quot; Her rakish sense of style catapulted a thrilling career in costume design where she dressed some of the most iconic names in rock &#39;n roll including Elvis Pressley, Pink Floyd, The Rolling Stones, John Phillips of The Mamas &amp; The Papas, Sammy Davis, Jr., Bruce Springsteen and Carly Simon, as well as legendary Broadway productions of &quot;Hair&quot; and &quot;Man on the Moon&quot;.\n\nMotherhood and a stint in ready-to-wear fashion followed, and then her creative compass took a different course, specifically a course in the art of welding. Soon, Marsia Holzer Studio was born, reflecting her natural affinity with flora and fauna and graphic shapes with a modernist eye.\n"^^xsd:string ;
+        schema:legalName    "Marsia Holzer Studio"^^xsd:string ;
+        schema:location     organizations:cbf887a5-a28a-4b0f-a222-fb20a4513960 .
+
+organizations:cbf887a5-a28a-4b0f-a222-fb20a4513960
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "399 Washington St"^^xsd:string .
+
+organizations:7a93c718-5404-410a-869b-ce5ffa49d8ff
+        a                    schema:Organization ;
+        schema:description   "Microsoft is an American multinational corporation that develops, manufactures, licenses, supports and sells computer software, consumer electronics and personal computers and services. Its best known software products are the Microsoft Windows line of operating systems, Microsoft Office office suite, and Internet Explorer web browser. Its flagship hardware products are Xbox game console and the Microsoft Surface series of tablets.\n\nHeadquartered in Redmond, Washington, Microsoft is the world&#39;s largest software company in terms of revenue. It is also considered one of the world&#39;s most valuable companies and one of the most successful startup companies of all time by market capitalization, revenue, growth and cultural impact. \n\nMicrosoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800 microcomputer. The original name, &quot;&quot;Micro-Soft,&quot;&quot; was from a combination of &quot;&quot;microcomputer&quot;&quot; and &quot;&quot;software.&quot;&quot;\n\nIn 1980, the company formed a partnership with IBM, allowing Microsoft to sell its software package with the computers IBM manufactured. It rose to dominate the personal computer operating system market with MS-DOS, followed by Microsoft Windows. \n\nSince the 1990s, it has increasingly diversified from the operating system market and ventured into hardware such as the Zune, a digital media player for music, videos, podcasts, and pictures; Xbox, a video game console; and Surface, a series of tablets. It has also made a presence on the web with the MSN internet portal and Bing search engine.\n\nMicrosoft has also made a number of corporate acquisitions, including Forethought, HotMail, and Visio Corporation. In May 2011, Microsoft acquired Skype Technologies for $8.5 billion in its largest acquisition to date.\n"^^xsd:string ;
+        schema:foundingDate  "1974-04-03T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "Microsoft"^^xsd:string ;
+        schema:location      organizations:8cf2bd82-f118-43f7-ba43-d951f4c536c7 , organizations:890a4a38-4367-4728-b521-11b497556be0 .
+
+organizations:8cf2bd82-f118-43f7-ba43-d951f4c536c7
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "500 S 10th St."^^xsd:string .
+
+organizations:890a4a38-4367-4728-b521-11b497556be0
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "1 Microsoft Way"^^xsd:string .
+
+organizations:8885a062-fc49-4215-9c1e-7e756354fa31
+        a                    schema:Organization ;
+        schema:description   "Rackspace® (NYSE: RAX) is the open cloud company and founder of OpenStack, the standard open-source operating system for cloud computing. Headquartered in San Antonio, Rackspace delivers its renowned Fanatical Support® to more than 200,000 business customers, from data centers on four continents.  Rackspace is a leading provider of hybrid clouds, which enable businesses to run their workloads where they run most effectively — whether on the public cloud, a private cloud, dedicated servers, or a combination of these platforms. Rackspace has been recognized by Bloomberg BusinessWeek as a Top 100 Performing Technology Company, and is featured on Fortune’s list of 100 Best Companies to Work For. For more information, visit www.rackspace.com.\n"^^xsd:string ;
+        schema:foundingDate  "1997-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "Rackspace"^^xsd:string ;
+        schema:location      organizations:4223405e-eabd-48b6-a5bf-c4e2865cac0e , organizations:e4a64293-feca-46a8-ab60-1dc48074a7f1 , organizations:4d86a828-298d-4ea4-8f16-a69f816e9b87 .
+
+organizations:4223405e-eabd-48b6-a5bf-c4e2865cac0e
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "620 Folsom St."^^xsd:string .
+
+organizations:e4a64293-feca-46a8-ab60-1dc48074a7f1
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "GBR"^^xsd:string ;
+        schema:streetAddress   "Millington Road"^^xsd:string .
+
+organizations:4d86a828-298d-4ea4-8f16-a69f816e9b87
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "5000 Walzem Road"^^xsd:string .
+
+organizations:476988f2-c633-4375-a762-8d025c5abf18
+        a                    schema:Organization ;
+        schema:description   "DoubleClick is a provider of digital marketing technology and services. Companies come to  DoubleClick for expertise in ad serving, media, video, search and affiliate marketing to help them make the most of the digital medium. \n"^^xsd:string ;
+        schema:foundingDate  "1995-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "DoubleClick"^^xsd:string ;
+        schema:location      organizations:79aaddaf-6377-4d89-810a-556b451e979e .
+
+organizations:79aaddaf-6377-4d89-810a-556b451e979e
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "76 Ninth Avenue"^^xsd:string .
+
+organizations:d1f53614-de34-47a3-8a12-ab16d9f19315
+        a                    schema:Organization ;
+        schema:description   "MaRS Innovation (MI) is a commercialization engine that integrates, centralizes and accelerates time to market of the discovery and intellectual property assets from its 16 world-class research institutions. \n\nMI’s discovery and innovation pipeline is derived from $1 billion in annual R&amp;D funding. Created as a not-for-profit organization through the Government of Canada’s Center of Excellence for Commercialization and Research program (CECR), MI has raised $50 million from federal and provincial governments, member institutions and industry partners. MI’s vision is to transform the Toronto-based research enterprise into one of world’s most successful commercialization clusters.\n\nThrough detailed, market facing due diligence, MI identifies opportunities from Canada’s largest academic cluster for further development and commercialization through project management, intellectual property management, investment and technology development. By crossing the innovation gap, MI transforms these opportunities into successful high-value licensing transactions and financeable start-up companies.\n"^^xsd:string ;
+        schema:foundingDate  "2008-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "MaRS Innovation"^^xsd:string ;
+        schema:location      organizations:b02d1ac6-3cc6-4abe-94f5-ff3bc7823cd5 .
+
+organizations:b02d1ac6-3cc6-4abe-94f5-ff3bc7823cd5
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "CAN"^^xsd:string ;
+        schema:streetAddress   "101 College Street, Suite 402"^^xsd:string .
+
+organizations:010c9ef4-f441-4339-aa58-bc0173fc4df4
+        a                    schema:Organization ;
+        schema:description   "MailChimp is an email marketing service with over 2 million users. They provide an easy way for users to send email newsletters, manage subscriber lists, and track campaign performance. \n\nMailChimp takes a variety of basic and advanced features (like templates, list segmentation, a/b testing, geo-targeting and ROI tracking) and makes them accessible to the everyday user through automation and a competitive price point. \n\nTheir platform uses an open API and encourages other systems and web applications to integrate with its email-marketing engine. Currently they offer integrations with systems such as PayPal, Google Analytics, Shopify, Magento, Salesforce and several others. \n"^^xsd:string ;
+        schema:foundingDate  "2000-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "MailChimp"^^xsd:string ;
+        schema:location      organizations:771a15de-f452-4dd9-96b4-ca59024062f9 .
+
+organizations:771a15de-f452-4dd9-96b4-ca59024062f9
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "512 Means Street NW"^^xsd:string .
+
+organizations:93c5a613-ede0-4484-94cc-99fccdb0d907
+        a                    schema:Organization ;
+        schema:description   "adBrite is the largest independent advertising exchange. \n\nadBrite first started taking advertising for external sites in 2003, and raised $4 million in venture capital from Sequoia in 2004. In 2006, adBrite raised another $8 million from Sequoia and Artis Capital, the same pair that invested together in YouTube.  \n\nIn 2008, adBrite changed its business model and became an ad exchange. adBrite maximizes selection and control for advertisers and publishers by providing site-level transparency, display and video capabilities, and an open platform for data providers and real-time bidders.\n\nadBrite now reaches more than 160 million U.S. unique visitors each month.\n"^^xsd:string ;
+        schema:foundingDate  "2002-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "adBrite"^^xsd:string ;
+        schema:location      organizations:13b7b2c4-9a7c-4418-a182-fd7c2d15113a .
+
+organizations:13b7b2c4-9a7c-4418-a182-fd7c2d15113a
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "731 Market St. 5th Floor"^^xsd:string .
+
+organizations:7d62377e-a535-40f6-9418-47c0ffb693e9
+        a                    schema:Organization ;
+        schema:description   "iVillage, bought out by NBC Universal for over $600 million, is a online network geared towards women. It consists of iVillage.com, Astrology.com, gardenweb.com, www.ivillage.co.uk and gurl.com. It targets teens, young women and mothers with unique content, community forums and other interactive tools.\n\niVillage is a leading online destination for women with over 30 million unique visitors a month. As of December 2007, iVillage records almost 4 billion page views annually.\n\nCompetitors include Yahoo Shine, Sugar Publishing and Glam Media.\n"^^xsd:string ;
+        schema:foundingDate  "1994-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "iVillage"^^xsd:string ;
+        schema:location      organizations:5170448a-c46a-4ca6-b02b-666756c27764 .
+
+organizations:5170448a-c46a-4ca6-b02b-666756c27764
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "500-512"^^xsd:string .
+
+organizations:a0898584-f5dc-4b3d-bf14-d7c07b709bb9
+        a                    schema:Organization ;
+        schema:description   "Mashable is the leading media company for the Connected Generation and the voice of digital culture. Reporting on the importance of digital innovation, Mashable empowers and inspires its readers around the globe. \n\nMashable’s record 34 million monthly unique visitors and 15 million social media followers are one of the most influential and engaged online communities worldwide. Founded in 2005, Mashable is headquartered in New York City with offices in San Francisco and Los Angeles.\n"^^xsd:string ;
+        schema:foundingDate  "2004-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "Mashable"^^xsd:string ;
+        schema:location      organizations:ba676b2e-aef5-4568-834f-7d3938b9ffc7 .
+
+organizations:ba676b2e-aef5-4568-834f-7d3938b9ffc7
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string ;
+        schema:streetAddress   "304 Park Ave South"^^xsd:string .
+
+organizations:0242388d-a7a1-49b3-9381-f63b6131c5fc
+        a                    schema:Organization ;
+        schema:description   "Check Point Software Technologies, Ltd. and its subsidiaries develop, market, and support a range of software and hardware products, and services for information technology security worldwide. \n\nThe company&#39;s products include firewall and VPN security gateways and appliances; dedicated security gateways, including secure remote access solutions and intrusion detection and... see more prevention systems; endpoint security comprising integrity products and SecureClient products, as well as ZoneAlarm security suite; data security products, such as Pointsec PC disk encryption, Pointsec for mobile devices, and Pointsec removable media product family; and security management solutions, which consist of SmartCenter, Eventia, Provider-1, and Security Management Portal. Check Point&#39;s products provide protection for network perimeter that enables authorized users to access network resources and to detect and thwart attacks; against internal threats protecting customers&#39; networks and endpoints from the threats; for Web-based communications allowing remote and mobile employees to securely connect to their organizations&#39; networks through Web browser; for network endpoints with security solutions that address the risks posed by hackers, worms, spyware, and other threats to the internal and remote computers; for data security protecting corporate information stored on mobile computing devices, such as laptops, PDAs, smartphones, and removable media, and controlling data that traverses through security gateways. The company serves enterprises, service providers, small and medium-sized businesses, and consumers. It has strategic relationships with Crossbeam Systems, Inc.; Dell, Inc.; Hewlett-Packard Co.; International Business Machines Corporation (IBM); Nokia Corporation; Nortel Networks Corp.; Siemens AG; and Sun Microsystems, Inc. The company was founded in 1993 and is headquartered in Tel Aviv, Israel.\n"^^xsd:string ;
+        schema:foundingDate  "1992-12-31T23:00:00Z"^^xsd:dateTime ;
+        schema:legalName     "Check Point Software Technologies"^^xsd:string ;
+        schema:location      organizations:f0f5ac35-f5e0-4946-b846-a6f66990a781 , organizations:20f85fad-1d8e-42aa-9886-d0e7d2ce7cbb .
+
+organizations:f0f5ac35-f5e0-4946-b846-a6f66990a781
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "USA"^^xsd:string .
+
+organizations:20f85fad-1d8e-42aa-9886-d0e7d2ce7cbb
+        a                      schema:PostalAddress ;
+        schema:addressCountry  "ISR"^^xsd:string .

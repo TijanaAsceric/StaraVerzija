@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Organizations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="js/jQuery1.7.2.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </head>
+    <body onload="getData()">
+
+
+        <div class="container">
+            <div class="header">
+                <span class="headerspan">Information about companies </span>
+            </div>
+            <div class="content" align="center">
+                <h2>Please, select parameters</h2>
+                <form action="#" onsubmit="search(1)">
+                    <table>
+                        <tr>
+                            <th scope="col">Name of company</th>
+                            <td><input type="text" id="txtNameO" name="txtNameO"/></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Countries:</th>
+                            <td><select id="selectCO" name="selectCO" title="Select one" >
+                                    <option>all</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Jobs</th>
+                            <td><select id="selectJob" name="selectJob" >
+                                    <option>all</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Name of employee</th>
+                            <td><input type="text" id="txtNameE" name="txtNameE"/></td>
+                        </tr>                   
+                        <tr><td colspan="2"><input type="button" id="btnSearch" name="btnSearch" value="Search" onclick="search(1)" class="classname"/>
+                               <input type="button" value="Clear Search" onclick="resetForm()" class="classname"/></td></tr>
+                    </table>    
+                </form>
+
+
+
+
+                <div style="margin-top:20px; padding:5px">
+                    <span class="HeadingText">Search result:</span>
+                    <div id="searchResultDiv">
+                    </div>
+                </div>
+
+                </div>
+
+            <div class="footer">
+
+                Tijana Asceric <br/>
+
+            </div>
+
+           </div>
+    </body>
+</html>
