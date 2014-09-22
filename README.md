@@ -17,3 +17,18 @@ Data about companies from the opencorporates.com and crunchbase.com websites are
 ![figure1](https://cloud.githubusercontent.com/assets/8823815/4350478/fea95422-41eb-11e4-9c01-c58ba62918d3.jpg)
 
 Figure 1. Domain model
+
+Class Organization contains basic information about a company. This includes name of the company, founding date, description, location of the company, employees.  An organization is linked to its employees (class Person), and its location (class PostalAddress).
+Class Person contains employee’s name and job title.
+Class PostalAddress contains information about address of the company, such as street address and country of the company.
+#3.	The solution
+
+Both CrunchBase and OpenCorporates have their own API for accessing data. In order to use API from crunchbase.com , it is necessary to sign up to get an API key. 
+The data obtained through the two APIs is further transformed into RDF triplets based on schema:Organization vocabulary, and resulting triplets are persisted into an RDF repository. The application allows access to that data through the following RESTful services:
+/employees- returns all types of employees in JSON format
+/countries- returns all countries in JSON format
+/findOrg - returns information about companies filtered by the specified criteria
+
+The following screenshots illustrate filtering based on the country that companies operate in (Figure 2), and filtering based on both the country and partially specified company name (Figure 3).
+Figure 4 illustrates the information the application provides about a specific company.
+
