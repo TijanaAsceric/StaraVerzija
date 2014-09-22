@@ -32,3 +32,6 @@ The data obtained through the two APIs is further transformed into RDF triplets 
 The following screenshots illustrate filtering based on the country that companies operate in (Figure 2), and filtering based on both the country and partially specified company name (Figure 3).
 Figure 4 illustrates the information the application provides about a specific company.
 
+![figure2](https://cloud.githubusercontent.com/assets/8823815/4350503/f94ac4be-41ed-11e4-805b-30a89f31dc10.png)
+
+Figure 2. Filtering based on the country that companies operate in
