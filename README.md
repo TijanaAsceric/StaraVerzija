@@ -1,33 +1,33 @@
-ProjekatISTijana
+
 ================
 # 1. About the project
-The main idea of this project is to develop an application that will collect and integrate information about companies, using API from opencorporates.com and crunchbase.com. Information about companies is available in JSON format.
+The main idea of this project is to develop an application that will collect and integrate information about companies, using API from [opencorporates.com](https://api.opencorporates.com/) and [crunchbase.com](https://developer.crunchbase.com/). Information about companies is available in JSON format.
 After the data is collected, it is transformed to RDF format and stored into an RDF   repository. Access to the collected data is enabled through RESTful services.
 Application workflow consists of the following phases:
 
-*	A custom made JSON parser retrieves and parses company data from both data sources.
-*	The extracted data is transformed into RDF triplets based on the Schema.org (schema:Organization)  vocabulary
-*	Data is persisted into an RDF repository
-*	Access to the data is enabled through RESTful services
+-	A custom made JSON parser retrieves and parses company data from both data sources.
+-	The extracted data is transformed into RDF triplets based on the Schema.org (schema:Organization)  vocabulary
+-	Data is persisted into an RDF repository
+-	Access to the data is enabled through RESTful services
 
 # 2.	Domain model
 
-Data about companies from the opencorporates.com and crunchbase.com websites are analyzed in order to determine which classes and properties from the schema:Oraganization vocabulary are supported. Based on that analysis, domain model, depicted on Figure 1, is created.
+Data about companies from the opencorporates.com and crunchbase.com websites are analyzed in order to determine which classes and properties from the [schema:Oraganization](http://www.schema.org/Organization) vocabulary are supported. Based on that analysis, domain model, depicted on Figure 1, is created.
 
 ![figure1](https://cloud.githubusercontent.com/assets/8823815/4350478/fea95422-41eb-11e4-9c01-c58ba62918d3.jpg)
 
 Figure 1. Domain model
 
- Class Organization contains basic information about a company. This includes name of the company, founding date, description, location of the company, employees.  An organization is linked to its employees (class Person), and its location (class PostalAddress).
+ Class *Organization* contains basic information about a company. This includes name of the company, founding date, description, location of the company, employees.  An organization is linked to its employees (class *Person*), and its location (class *PostalAddress*).
  
- Class Person contains employee’s name and job title.
+ Class *Person* contains employee’s name and job title.
  
- Class PostalAddress contains information about address of the company, such as street address and country of the company.
+ Class *PostalAddress* contains information about address of the company, such as street address and country of the company.
 
 #3.	The solution
 
-Both CrunchBase and OpenCorporates have their own API for accessing data. In order to use API from crunchbase.com, it is necessary to sign up to get an API key. 
-The data obtained through the two APIs is further transformed into RDF triplets based on schema:Organization vocabulary, and resulting triplets are persisted into an RDF repository. The application allows access to that data through the following RESTful services:
+Both CrunchBase and OpenCorporates have their own API for accessing data. In order to use API from [crunchbase.com](https://developer.crunchbase.com/), it is necessary to [sign up](https://developer.crunchbase.com/signup?plan_ids%5b%5d=2357355766752) to get an API key. 
+The data obtained through the two APIs is further transformed into RDF triplets based on [schema:Organization](http://www.schema.org/Organization) vocabulary, and resulting triplets are persisted into an RDF repository. The application allows access to that data through the following RESTful services:
 
 /employees- returns all types of employees in JSON format
 
@@ -53,14 +53,14 @@ Figure 4. Detail of the selected company
 #4.	Technical realization
 
 This application is written in programming language Java, using NetBeans IDE 8.0.
-The application uses Jenabean library for mapping Java objects into RDF triplets using annotations. Jenabean provides explicit bindings between Java classes and RDFS/OWL classes, and also between Java properties and the corresponding RDF properties.
-Jena TDB library is used for data storage in an RDF repository. TDB is a component of Jena for RDF storage and query. It supports the full range of Jena APIs.
+The application uses [Jenabean](https://code.google.com/p/jenabean/) library for mapping Java objects into RDF triplets using annotations. Jenabean provides explicit bindings between Java classes and RDFS/OWL classes, and also between Java properties and the corresponding RDF properties.
+[Jena TDB](http://jena.apache.org/documentation/tdb/) library is used for data storage in an RDF repository. TDB is a component of Jena for RDF storage and query. It supports the full range of Jena APIs.
 
-Implementation of the RESTful web service is supported by the Jersey framework. Jersey is an open source JAX-RS Reference Implementation for building RESTful Web services. It uses annotations that define the type of the HTTP request (GET, POST ...) and also the path to the requested resource.
+Implementation of the RESTful web service is supported by the [Jersey](https://jersey.java.net/) framework. Jersey is an open source JAX-RS Reference Implementation for building RESTful Web services. It uses annotations that define the type of the HTTP request (GET, POST ...) and also the path to the requested resource.
 
 Data are extracted from database using SPARQL queries.
 
-This application has been developed as a part of the project assignment for the course Intelligent Systems at the Faculty of Organization Sciences, University of Belgrade, Serbia.
+This application has been developed as a part of the project assignment for the course [Intelligent Systems](http://is.fon.rs/) at the Faculty of Organization Sciences, University of Belgrade, Serbia.
 This software is licensed under the MIT License.
 The MIT License (MIT)
 Copyright (c) 2014 Tijana Ašćerić-tijana.asceric@gmail.com
