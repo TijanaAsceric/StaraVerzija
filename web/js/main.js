@@ -53,7 +53,7 @@ setTimeout(function() {
         dataType: "json", 
         success: renderJobsList     
         });
-       },5000);
+       },8000);
          
         }
 
@@ -129,7 +129,7 @@ function showOrganizations(data) {
         i++;
        orgDiv = orgDiv + "<div id=\"" + org.legalName + "\">\n\
 <table><tbody><tr><td width=\"80%\"><h1><span>" + org.legalName + "</h1></td><td>\n\
-    Web site:<h2><a href=\"" + org.legalName + "\">" + "<span>" + org.legalName + "</span></a></h2></td></tr>\n\
+    Web site:<h2><a href=\"" + org.url + "\">" + "<span>" + org.legalName + "</span></a></h2></td></tr>\n\
  <tr ><td colspan=\"2\"><h3>Founding date:</h3><span>" + org.foundingDate + "</span></td></tr>\n\
 <tr ><td colspan=\"2\"><h3>Description:</h3><span>" + org.description + "</span></td></tr>\n\
  <tr><td colspan=\"2\"><h3>Addresses:</h3><span>" + returnAddresses(org.location) + "</span></td></tr>\n\

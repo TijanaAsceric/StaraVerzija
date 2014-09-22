@@ -29,7 +29,9 @@ public class OrganizationRestParser {
         jsonOrganzations.addProperty("URI", o.getUri().toString());
         jsonOrganzations.addProperty("legalName", o.getLegalName());
         jsonOrganzations.addProperty("description", o.getDescription());
-       // jsonOrganzations.addProperty("url", o.getUrl().toString());
+        if(o.getUrl()!=null){
+        jsonOrganzations.addProperty("url", o.getUrl().toString());
+        }
 
         JsonArray namePerson = new JsonArray();
         for (Person person : o.getEmployee()) {

@@ -110,6 +110,9 @@ public class MyPathResource {
         }
 
         Collection<Organization> organizations = qu.getOrganizations(f);
+        System.out.println("FOUND "+f.getCountry());
+        System.out.println("FOUND job"+f.getJobOfEmployee());
+        
         if (organizations != null && !organizations.isEmpty()) {
             JsonArray orgarr = new JsonArray();
 
